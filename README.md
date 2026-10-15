@@ -1,6 +1,12 @@
 ### Realtime Marketplace
 
-Realtime Marketplace Descriptions
+A custom Frappe marketplace with product browsing, buyer/seller orders, mobile
+sessions, and user-scoped realtime order events.
+
+Read [the architecture guide](docs/architecture.md) for the directory map,
+dependency rules, stable API routes, realtime behavior, and where future code
+belongs. The API delegates to focused services; Frappe DocType files keep their
+required locations.
 
 ### Installation
 
@@ -8,8 +14,8 @@ You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
-bench install-app realtime_marketplace
+bench get-app https://github.com/idipangkar-ai/realtime-frappe-server.git --branch develop
+bench --site your-site.local install-app realtime_marketplace
 ```
 
 ### Contributing
